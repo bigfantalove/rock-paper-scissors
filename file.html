@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <script>
+
+    let rock="rock"
+    let paper="paper"
+    let scissors = "scissors"
+
+function getComputerChoice() {
+
+    let computerChoice = Math.floor(Math.random()* 3)
+
+switch (computerChoice){
+    case 0:
+    console.log("The computer has chosen rock")
+    break
+
+    case 1:
+    console.log("The computer has chosen paper")
+    break
+
+    case 2:
+    console.log("The computer has chosen scissors") 
+} 
+
+function playerChoice (playerSelection) {
+
+    let computerSelection = getComputerChoice
+
+    if (playerSelection == computerSelection) {
+
+    console.log("Draw, try again !") }
+
+    else if (playerSelection=="rock" && computerSelection == "scissors") {
+        console.log("You choose rock")
+        console.log("You win !")
+    }
+
+    else if (playerSelection=="rock" && computerSelection == "paper") {
+        console.log("You choose rock")
+        console.log("You loose !")
+    }
+
+     else if (playerSelection=="paper" && computerSelection == "rock") {
+        console.log("You choose paper")
+        console.log("You win !")
+    }
+
+      else if (playerSelection=="paper" && computerSelection == "scissors") {
+        console.log("You choose paper")
+        console.log("You loose !")
+    }
+
+      else if (playerSelection=="scissors" && computerSelection == "paper") {
+        console.log("You choose scissors")
+        console.log("You win !")
+    }
+
+    else if (playerSelection=="scissors" && computerSelection == "rock") {
+        console.log("You choose scissors")
+        console.log("You loose !")
+    }
+
+
+}
+
+
+
+
+
+
+
+}
+console.log(getComputerChoice())
+console.log(playerChoice(rock))
+
+  </script>
+</body>
+</html>
